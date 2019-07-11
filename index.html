@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: flex;align-items: center; justify-content: center; flex-direction: row">
+     <img id="pic" width="300" src="зима.jpg" onclick="forward()">
+    </div>
+</body>
+<script>
+    i=1
+    function forward() {
+        i=i+1
+        if (i>4){
+            i=1
+        }
+    if (i==1){
+        document.getElementById('pic').src='зима.jpg'
+        }
+    if(i==2) {
+        document.getElementById('pic').src = 'весна.jpg'
+        }
+    if(i==3){
+        document.getElementById('pic').src='лето.jpg'
+        }
+    if (i==4){
+        document.getElementById('pic').src='осень.jpg'
+        }
+    }
+    </script>
+</html>
